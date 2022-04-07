@@ -35,7 +35,7 @@ namespace JoKenPo
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnPaapel = new System.Windows.Forms.Button();
+            this.btnPapel = new System.Windows.Forms.Button();
             this.btnTesoura = new System.Windows.Forms.Button();
             this.btnPedra = new System.Windows.Forms.Button();
             this.pictureResultado = new System.Windows.Forms.PictureBox();
@@ -110,15 +110,16 @@ namespace JoKenPo
             this.label5.TabIndex = 8;
             this.label5.Text = "=";
             // 
-            // btnPaapel
+            // btnPapel
             // 
-            this.btnPaapel.BackgroundImage = global::JoKenPo.Properties.Resources.Papel;
-            this.btnPaapel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPaapel.Location = new System.Drawing.Point(310, 317);
-            this.btnPaapel.Name = "btnPaapel";
-            this.btnPaapel.Size = new System.Drawing.Size(200, 200);
-            this.btnPaapel.TabIndex = 10;
-            this.btnPaapel.UseVisualStyleBackColor = true;
+            this.btnPapel.BackgroundImage = global::JoKenPo.Properties.Resources.Papel;
+            this.btnPapel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPapel.Location = new System.Drawing.Point(310, 317);
+            this.btnPapel.Name = "btnPapel";
+            this.btnPapel.Size = new System.Drawing.Size(200, 200);
+            this.btnPapel.TabIndex = 10;
+            this.btnPapel.UseVisualStyleBackColor = true;
+            this.btnPapel.Click += new System.EventHandler(this.btnPapel_Click);
             // 
             // btnTesoura
             // 
@@ -129,6 +130,7 @@ namespace JoKenPo
             this.btnTesoura.Size = new System.Drawing.Size(200, 200);
             this.btnTesoura.TabIndex = 11;
             this.btnTesoura.UseVisualStyleBackColor = true;
+            this.btnTesoura.Click += new System.EventHandler(this.btnTesoura_Click);
             // 
             // btnPedra
             // 
@@ -139,6 +141,7 @@ namespace JoKenPo
             this.btnPedra.Size = new System.Drawing.Size(200, 200);
             this.btnPedra.TabIndex = 9;
             this.btnPedra.UseVisualStyleBackColor = true;
+            this.btnPedra.Click += new System.EventHandler(this.btnPedra_Click);
             // 
             // pictureResultado
             // 
@@ -170,7 +173,7 @@ namespace JoKenPo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 559);
             this.Controls.Add(this.btnTesoura);
-            this.Controls.Add(this.btnPaapel);
+            this.Controls.Add(this.btnPapel);
             this.Controls.Add(this.btnPedra);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -204,7 +207,7 @@ namespace JoKenPo
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnPedra;
-        private System.Windows.Forms.Button btnPaapel;
+        private System.Windows.Forms.Button btnPapel;
         private System.Windows.Forms.Button btnTesoura;
     }
 }
